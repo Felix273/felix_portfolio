@@ -11,7 +11,7 @@ const Footer = () => {
           Ready to take <span className='text-purple'>your</span> Digital presence to the next level?
         </h1>
         <p>
-          Reach out to me today and let's discuss how I can help you achieve your goals.
+          Reach out to me today and let&apos;s discuss how I can help you achieve your goals.
         </p>
         <a href="mailto:eregaefelix8@gmail.com">
           <MagicButton 
