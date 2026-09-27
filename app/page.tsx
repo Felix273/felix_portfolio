@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const projects = [
   {
     number: "01",
@@ -92,8 +90,8 @@ export default function Home() {
         </div>
         <div className="project-grid">
           {projects.map((project) => (
-            <a className="project-card" href={project.href} target="_blank" rel="noopener noreferrer" key={project.number}>
-              <div className="project-image"><Image src={project.image} alt={`${project.title} project preview`} width={640} height={410} /><span className="project-index">{project.number}</span><span className="project-arrow"><Arrow /></span></div>
+            <a className="project-card" href={project.href} target="_blank" rel="noreferrer" key={project.number}>
+              <div className="project-image"><img src={project.image} alt={`${project.title} project preview`} /><span className="project-index">{project.number}</span><span className="project-arrow"><Arrow /></span></div>
               <div className="project-info"><div><p className="eyebrow">{project.type}</p><h3>{project.title}</h3></div><p className="project-description">{project.description}</p><div className="tag-row">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div>
             </a>
           ))}
